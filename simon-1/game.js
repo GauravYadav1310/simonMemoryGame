@@ -59,7 +59,7 @@ var currentlevel=0;
         }else{
             level=0;
             $("h1").text("Press A Key to Start");
-            var audio= new Audio('wrong.mp3');
+            var audio= new Audio('./sounds/wrong.mp3');
             audio.play();
             $("body").css("background-color","red");
             setTimeout(function () {
@@ -71,7 +71,7 @@ var currentlevel=0;
 
 
 function playsound(colour){
-    var audio= new Audio(colour+'.mp3');
+    var audio= new Audio('./sounds/'+colour+'.mp3');
     audio.play();
 }
 
